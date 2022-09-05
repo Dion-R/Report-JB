@@ -40,21 +40,21 @@
             <div class="d-flex position-relative pyramid1">
               <div class="triangle1"></div>
               <div class="triangle2"></div>
-              <p class="position-absolute text-white">Income</p>
+              <p class="position-absolute text-white incomes">Income</p>
             </div>
           </div>
           <div class="position-absolute bottom-0">
             <div class="d-flex position-relative pyramid2">
               <div class="triangle3"></div>
               <div class="triangle4"></div>
-              <p class="position-absolute text-white mb-0">Expenses</p>
+              <p class="position-absolute text-white mb-0 expenses">Expenses</p>
             </div>
           </div>
           <div class="position-absolute bottom-0">
             <div class="d-flex position-relative pyramid3">
               <div class="triangle5"></div>
               <div class="triangle6"></div>
-              <p class="position-absolute text-white mb-0">Debts</p>
+              <p class="position-absolute text-white mb-0 debts">Debts</p>
             </div>
           </div>
         </div>
@@ -65,7 +65,11 @@
           >
             <h2 class="text-center">
               Your income is
-              <span class="incomeSubTotal" style="color: var(--jb-green)"></span> per month
+              <span
+                class="incomeSubTotal"
+                style="color: var(--jb-green)"
+              ></span>
+              per month
             </h2>
             <div class="line-green my-3"></div>
             <ul class="list-unstyled">
@@ -74,8 +78,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Wages</p>
-                  <p class="mb-0 income">$0</p>
+                  <p class="mb-0 b-l">Wages</p>
+                  <p class="mb-0 b-l income">$0</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -83,8 +87,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Centrelink</p>
-                  <p class="mb-0 income">$4000</p>
+                  <p class="mb-0 b-l">Centrelink</p>
+                  <p class="mb-0 b-l income">$4000</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -92,15 +96,17 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Other</p>
-                  <p class="mb-0 income">$0</p>
+                  <p class="mb-0 b-l">Other</p>
+                  <p class="mb-0 b-l income">$0</p>
                 </div>
               </li>
               <div class="line-green my-3"></div>
             </ul>
             <div class="d-flex justify-content-between aling-items-center">
-              <h5 class="mb-0" style="color: var(--jb-green)">Total Income</h5>
-              <p class="mb-0 incomeSubTotal"></p>
+              <p class="mb-0 b-l" style="color: var(--jb-green)">
+                Total Income
+              </p>
+              <p class="mb-0 b-l incomeSubTotal"></p>
             </div>
           </div>
         </div>
@@ -111,7 +117,8 @@
           >
             <h2 class="text-center">
               Your Expenses are
-              <span class="expenseSubTotal" style="color: var(--jb-red)"></span> per month
+              <span class="expenseSubTotal" style="color: var(--jb-red)"></span>
+              per month
             </h2>
             <div class="line-red my-3"></div>
             <ul class="list-unstyled">
@@ -120,8 +127,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Gambling Expenditure</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Gambling Expenditure</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -129,8 +136,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Collection and Consolidation</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Collection and Consolidation</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -138,8 +145,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Overdrawn</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Overdrawn</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -147,8 +154,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Rent</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Rent</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -156,8 +163,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Utilities</p>
-                  <p class="mb-0 expense">$300</p>
+                  <p class="mb-0 b-l">Utilities</p>
+                  <p class="mb-0 b-l expense">$300</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -165,8 +172,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Groceries</p>
-                  <p class="mb-0 expense">$55</p>
+                  <p class="mb-0 b-l">Groceries</p>
+                  <p class="mb-0 b-l expense">$55</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -174,8 +181,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Dining Out</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Dining Out</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -183,8 +190,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Insurance</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Insurance</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -192,8 +199,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Telecommunications</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Telecommunications</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -201,8 +208,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Subscription TV</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Subscription TV</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -210,8 +217,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Education and Child Care</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Education and Child Care</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -219,8 +226,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Vehicles and Transport</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Vehicles and Transport</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -228,8 +235,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Personal Care</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Personal Care</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -237,8 +244,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Health</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Health</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -246,8 +253,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Department Stores</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Department Stores</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -255,8 +262,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Retail</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Retail</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -264,8 +271,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Home improvement</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Home improvement</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -273,8 +280,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Entertainment</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Entertainment</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -282,8 +289,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Gyms and other Memberships</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Gyms and other Memberships</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -291,8 +298,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Travel</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Travel</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -300,8 +307,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Pet Care</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Pet Care</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -309,15 +316,17 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Uncategorised Debt</p>
-                  <p class="mb-0 expense">$150</p>
+                  <p class="mb-0 b-l">Uncategorised Debt</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <div class="line-red my-3"></div>
             </ul>
             <div class="d-flex justify-content-between aling-items-center">
-              <h5 class="mb-0" style="color: var(--jb-red)">Total Expenses</h5>
-              <p class="mb-0 expenseSubTotal"></p>
+              <p class="mb-0 b-l" style="color: var(--jb-red)">
+                Total Expenses
+              </p>
+              <p class="mb-0 b-l expenseSubTotal"></p>
             </div>
           </div>
         </div>
@@ -328,7 +337,8 @@
           >
             <h2 class="text-center">
               Your current debt repayments are
-              <span class='debtSubTotal' style="color: var(--jb-red)"></span> per month
+              <span class="debtSubTotal" style="color: var(--jb-red)"></span>
+              per month
             </h2>
             <div class="line-yellow my-3"></div>
             <ul class="list-unstyled">
@@ -337,8 +347,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">CBA</p>
-                  <p class="mb-0 debt">$600</p>
+                  <p class="mb-0 b-l">CBA</p>
+                  <p class="mb-0 b-l debt">$600</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -346,8 +356,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Cigno</p>
-                  <p class="mb-0 debt">$300</p>
+                  <p class="mb-0 b-l">Cigno</p>
+                  <p class="mb-0 b-l debt">$300</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -355,8 +365,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Zip Pay</p>
-                  <p class="mb-0 debt">$1000</p>
+                  <p class="mb-0 b-l">Zip Pay</p>
+                  <p class="mb-0 b-l debt">$1000</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -364,8 +374,8 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Humm90</p>
-                  <p class="mb-0 debt">$500</p>
+                  <p class="mb-0 b-l">Humm90</p>
+                  <p class="mb-0 b-l debt">$500</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -373,17 +383,17 @@
                 <div
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
-                  <p class="mb-0">Charter Mercantile</p>
-                  <p class="mb-0 debt">$200</p>
+                  <p class="mb-0 b-l">Charter Mercantile</p>
+                  <p class="mb-0 b-l debt">$200</p>
                 </div>
               </li>
               <div class="line-yellow my-3"></div>
             </ul>
             <div class="d-flex justify-content-between aling-items-center">
-              <h5 class="mb-0" style="color: var(--jb-red)">
+              <p class="mb-0 b-l" style="color: var(--jb-red)">
                 Total Debt Repayments
-              </h5>
-              <p class="mb-0 debtSubTotal"></p>
+              </p>
+              <p class="mb-0 b-l debtSubTotal"></p>
             </div>
           </div>
         </div>
@@ -395,20 +405,20 @@
               <li
                 class="d-flex justify-content-between align-items-center my-3"
               >
-                <p class="mb-0">Monthly Income</p>
-                <p class="mb-0 incomeSubTotal"></p>
+                <p class="mb-0 b-l">Monthly Income</p>
+                <p class="mb-0 b-l incomeSubTotal"></p>
               </li>
               <li
                 class="d-flex justify-content-between align-items-center my-3"
               >
-                <p class="mb-0">Expenses</p>
-                <p class="mb-0 expenseSubTotal"></p>
+                <p class="mb-0 b-l">Expenses</p>
+                <p class="mb-0 b-l expenseSubTotal"></p>
               </li>
               <li
                 class="d-flex justify-content-between align-items-center my-3"
               >
-                <p class="mb-0">Debt Repayments</p>
-                <p class="mb-0 debtSubTotal"></p>
+                <p class="mb-0 b-l">Debt Repayments</p>
+                <p class="mb-0 b-l debtSubTotal"></p>
               </li>
             </ul>
             <div class="line-red my-3"></div>
@@ -426,15 +436,18 @@
                 $4475.59 Surplus per month
               </h3>
             </div>
+            <h2 class="text-center">We Can Help !</h2>
+            <div class="line-red my-3"></div>
             <div class="my-3">
-              <p class="mb-0 text-center d-none negative">
+              <p class="mb-0 text-center d-none b-l negative">
                 Based on your financial health summary, we believe that you may
                 be struggling to get by. Please get in touch with us so that we
-                can help with your debt repayments
+                can help with your debt repayments.
               </p>
-              <p class="mb-0 text-center d-none positive">
-                Based on your financial health summary, we believe that we may have a product for you. please get in touch so
-                that we can help you with your journey.
+              <p class="mb-0 text-center d-none b-l positive">
+                Based on your financial health summary, we believe that we may
+                have a product for you. please get in touch so that we can help
+                you with your journey.
               </p>
             </div>
             <div

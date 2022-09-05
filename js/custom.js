@@ -191,17 +191,7 @@ const expenseTriangle2 = document.querySelector(".triangle4");
 const debtTriangle1 = document.querySelector(".triangle5");
 const debtTriangle2 = document.querySelector(".triangle6");
 
-const mediaQuery1400 = window.matchMedia("(min-width: 1400px");
 
 
-// if (mediaQuery1400.matches) {
-//   const expenseHeight = (expenseCalc() / incomeCalc()) * 200;
-//   const debtHeight = (debtCalc() / incomeCalc()) * 200;
 
-//   expenseTriangle1.style.borderBottom = `${expenseHeight}px solid #fd8947`;
-//   expenseTriangle2.style.borderBottom = `${expenseHeight}px solid #ca4b02`;
-
-//   debtTriangle1.style.borderBottom = `${debtHeight}px solid #f76a6a`;
-//   debtTriangle2.style.borderBottom = `${debtHeight}px solid #e33030`;
-// }
 

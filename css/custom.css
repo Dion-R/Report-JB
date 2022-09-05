@@ -11,7 +11,18 @@
 }
 
 /* RFS */
-
+.incomes {
+  font-size: 1.5rem;
+}
+.expenses {
+  font-size: 1.5rem;
+}
+.debts {
+  font-size: 1.5rem;
+}
+.b-l {
+  font-size: 1.5rem;
+}
 /* dot point */
 .dot {
   width: 0.3rem;
@@ -38,27 +49,27 @@
 }
 /* pyramid positioning */
 .pyramid > div:first-of-type {
-    left: 30%;
+  left: 30%;
 }
 .pyramid > div:nth-of-type(2) {
-    right: 50%;
+  right: 50%;
 }
 .pyramid > div:nth-of-type(3) {
-    left: 50%;
+  left: 50%;
 }
 /* pyramid text positioning */
-    .pyramid1 p {
-        left: 27%;
-        bottom: 30%;
-    }
-      .pyramid2 p {
-        left: 16%;
-        bottom: 5%;
-    }
-      .pyramid3 p {
-        left: 20%;
-        bottom: 5%;
-    }
+.pyramid1 p {
+  left: 26%;
+  bottom: 30%;
+}
+.pyramid2 p {
+  left: 13%;
+  bottom: 5%;
+}
+.pyramid3 p {
+  left: 20%;
+  bottom: 5%;
+}
 /* Border right and border left max widhts defined for xxl breakpoint */
 .triangle1 {
   width: 0;
@@ -91,19 +102,27 @@
   width: 0;
   height: 0;
   border-left: 150px solid transparent;
-  border-bottom: 280px solid  #f76a6a;
+  border-bottom: 225px solid #f76a6a;
 }
 
 .triangle6 {
   width: 0;
   height: 0;
   border-right: 150px solid transparent;
-  border-bottom: 280px solid #e33030;
+  border-bottom: 225px solid #e33030;
 }
 
 @media screen and (max-width: 1400px) {
   .pyramid {
     min-height: 280px;
+  }
+  .pyramid1 p {
+    left: 24%;
+    bottom: 30%;
+  }
+  .pyramid2 p {
+    left: 10%;
+    bottom: 5%;
   }
   .triangle1 {
     width: 0;
@@ -136,7 +155,7 @@
     width: 0;
     height: 0;
     border-left: 130px solid transparent;
-    border-bottom: 225px solid  #f76a6a;
+    border-bottom: 225px solid #f76a6a;
   }
 
   .triangle6 {
@@ -152,7 +171,19 @@
     min-height: 250px;
   }
   .pyramid2 p {
-    left: 13%;
+    left: 10%;
+  }
+  .incomes {
+    font-size: 1.25rem;
+  }
+  .expenses {
+    font-size: 1.25rem;
+  }
+  .debts {
+    font-size: 1.25rem;
+  }
+  .b-l {
+    font-size: 1.25rem;
   }
   .triangle1 {
     width: 0;
@@ -178,14 +209,14 @@
     width: 0;
     height: 0;
     border-right: 110px solid transparent;
-    border-bottom: 200px solid #ca4b02;;
+    border-bottom: 200px solid #ca4b02;
   }
 
   .triangle5 {
     width: 0;
     height: 0;
     border-left: 110px solid transparent;
-    border-bottom: 200px solid  #f76a6a;
+    border-bottom: 200px solid #f76a6a;
   }
 
   .triangle6 {
@@ -224,14 +255,14 @@
     width: 0;
     height: 0;
     border-right: 110px solid transparent;
-    border-bottom: 200px solid #ca4b02;;
+    border-bottom: 200px solid #ca4b02;
   }
 
   .triangle5 {
     width: 0;
     height: 0;
     border-left: 110px solid transparent;
-    border-bottom: 200px solid  #f76a6a;
+    border-bottom: 200px solid #f76a6a;
   }
 
   .triangle6 {
@@ -242,35 +273,47 @@
   }
 }
 @media screen and (max-width: 576px) {
-    .pyramid > div:first-of-type {
+  .pyramid > div:first-of-type {
     left: 29%;
   }
   .container {
     padding: 0;
   }
+  .incomes {
+    font-size: 1rem;
+  }
+  .expenses {
+    font-size: 1rem;
+  }
+  .debts {
+    font-size: 1rem;
+  }
+  .b-l {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 476px) {
-        .pyramid > div:first-of-type {
+  .pyramid > div:first-of-type {
     left: 27%;
-}
+  }
 }
 @media screen and (max-width: 496px) {
-        .pyramid > div:first-of-type {
+  .pyramid > div:first-of-type {
     left: 27%;
-}
-    .pyramid > div:nth-of-type(2) {
+  }
+  .pyramid > div:nth-of-type(2) {
     right: 50%;
-}
-   .pyramid > div:nth-of-type(3) {
+  }
+  .pyramid > div:nth-of-type(3) {
     left: 50%;
-}
-   .pyramid {
+  }
+  .pyramid {
     min-height: 250px;
   }
   .pyramid1 p {
     left: 26%;
   }
-   .pyramid2 p {
+  .pyramid2 p {
     left: 13%;
   }
   .triangle1 {
@@ -297,14 +340,14 @@
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
-    border-bottom: 180px solid #ca4b02;;
+    border-bottom: 180px solid #ca4b02;
   }
 
   .triangle5 {
     width: 0;
     height: 0;
     border-left: 100px solid transparent;
-    border-bottom: 180px solid  #f76a6a;
+    border-bottom: 180px solid #f76a6a;
   }
 
   .triangle6 {
@@ -315,19 +358,19 @@
   }
 }
 @media screen and (max-width: 438px) {
-        .pyramid > div:first-of-type {
+  .pyramid > div:first-of-type {
     left: 28%;
-}
-    .pyramid > div:nth-of-type(2) {
+  }
+  .pyramid > div:nth-of-type(2) {
     right: 45%;
-}
-   .pyramid {
+  }
+  .pyramid {
     min-height: 200px;
   }
   .pyramid1 p {
     left: 26%;
   }
-   .pyramid2 p {
+  .pyramid2 p {
     left: 13%;
   }
   .triangle1 {
@@ -354,14 +397,14 @@
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
-    border-bottom: 150px solid #ca4b02;;
+    border-bottom: 150px solid #ca4b02;
   }
 
   .triangle5 {
     width: 0;
     height: 0;
     border-left: 90px solid transparent;
-    border-bottom: 150px solid  #f76a6a;
+    border-bottom: 150px solid #f76a6a;
   }
 
   .triangle6 {
@@ -372,19 +415,19 @@
   }
 }
 @media screen and (max-width: 400px) {
-        .pyramid > div:first-of-type {
+  .pyramid > div:first-of-type {
     left: 28%;
-}
-    .pyramid > div:nth-of-type(2) {
+  }
+  .pyramid > div:nth-of-type(2) {
     right: 45%;
-}
-   .pyramid {
+  }
+  .pyramid {
     min-height: 200px;
   }
   .pyramid1 p {
     left: 25%;
   }
-   .pyramid2 p {
+  .pyramid2 p {
     left: 13%;
   }
   .triangle1 {
@@ -411,14 +454,14 @@
     width: 0;
     height: 0;
     border-right: 100px solid transparent;
-    border-bottom: 120px solid #ca4b02;;
+    border-bottom: 120px solid #ca4b02;
   }
 
   .triangle5 {
     width: 0;
     height: 0;
     border-left: 90px solid transparent;
-    border-bottom: 100px solid  #f76a6a;
+    border-bottom: 100px solid #f76a6a;
   }
 
   .triangle6 {
@@ -428,4 +471,3 @@
     border-bottom: 100px solid #e33030;
   }
 }
-
