@@ -185,71 +185,21 @@ if (positionString.length == 5 && position < 0) {
     total.textContent = `$${positionString} Surplus per month`;
   });
 }
-// pyramid height
+// Responsive pyramid height
 const expenseTriangle1 = document.querySelector(".triangle3");
 const expenseTriangle2 = document.querySelector(".triangle4");
 const debtTriangle1 = document.querySelector(".triangle5");
 const debtTriangle2 = document.querySelector(".triangle6");
 
-
-
-const mediaQuery1400 = window.matchMedia('(min-width: 1400px)');
-mediaQuery1400.addEventListener("change", pyramid1);
-function pyramid1(e) {
-  if(e.matches) {
-    const expenseHeight = (expenseCalc() / incomeCalc()) * 300;
-    expenseTriangle1.style.borderBottom = `${expenseHeight}px solid #fd8947`;
-    expenseTriangle2.style.borderBottom = `${expenseHeight}px solid #ca4b02`;
-    const debtHeight = (debtCalc() / incomeCalc()) * 300;
-    debtTriangle1.style.borderBottom = `${debtHeight}px solid #f76a6a`;
-    debtTriangle2.style.borderBottom = `${debtHeight}px solid #e33030`;
-  }
-}
-pyramid1(mediaQuery1400);
-
-
-const mediaQuery1200 = window.matchMedia("(max-width: 1400px)");
-mediaQuery1200.addEventListener("change", pyramid2);
-function pyramid2(e) {
-  if (e.matches) {
-    const expenseHeight = (expenseCalc() / incomeCalc()) * 280;
-    expenseTriangle1.style.borderBottom = `${expenseHeight}px solid #fd8947`;
-    expenseTriangle2.style.borderBottom = `${expenseHeight}px solid #ca4b02`;
-    const debtHeight = (debtCalc() / incomeCalc()) * 280;
-    debtTriangle1.style.borderBottom = `${debtHeight}px solid #f76a6a`;
-    debtTriangle2.style.borderBottom = `${debtHeight}px solid #e33030`;
-  }
-}
-pyramid2(mediaQuery1200);
-
-// const mediaQuery200 = window.matchMedia("(max-width: 1200px)");
-// mediaQuery1200.addEventListener("change", pyramid3);
-// function pyramid3(e) {
-//   if (e.matches) {
-//     const expenseHeight = (expenseCalc() / incomeCalc()) * 250;
-//     expenseTriangle1.style.borderBottom = `${expenseHeight}px solid #fd8947`;
-//     expenseTriangle2.style.borderBottom = `${expenseHeight}px solid #ca4b02`;
-//     const debtHeight = (debtCalc() / incomeCalc()) * 250;
-//     debtTriangle1.style.borderBottom = `${debtHeight}px solid #f76a6a`;
-//     debtTriangle2.style.borderBottom = `${debtHeight}px solid #e33030`;
-//   }
-// }
-// pyramid3(mediaQuery1200);
-
-
-
-
-const pyramid = document.querySelector('.pyramid');
-
-
-const observer = new ResizeObserver(entries => {
-  const box = entries[0]
-  return box.contentRect.height;
-})
-
-
-console.log(observer.observe(pyramid) * 1)
-
-
-
+const pyramid = document.querySelector(".pyramid");
+const Observer = new ResizeObserver((entries) => {
+  const height = entries[0].contentRect.height;
+  const expenseHeight = (expenseCalc() / incomeCalc()) * height;
+  expenseTriangle1.style.borderBottom = `${expenseHeight}px solid #fd8947`;
+  expenseTriangle2.style.borderBottom = `${expenseHeight}px solid #ca4b02`;
+  const debtHeight = (debtCalc() / incomeCalc()) * height;
+  debtTriangle1.style.borderBottom = `${debtHeight}px solid #f76a6a`;
+  debtTriangle2.style.borderBottom = `${debtHeight}px solid #e33030`;
+});
+Observer.observe(pyramid);
 
