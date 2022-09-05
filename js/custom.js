@@ -190,6 +190,9 @@ const expenseTriangle1 = document.querySelector(".triangle3");
 const expenseTriangle2 = document.querySelector(".triangle4");
 const debtTriangle1 = document.querySelector(".triangle5");
 const debtTriangle2 = document.querySelector(".triangle6");
+const incomeTriangle1 = document.querySelector('.triangle1')
+const incomeTriangle2 = document.querySelector(".triangle2");
+
 
 const pyramid = document.querySelector(".pyramid");
 const Observer = new ResizeObserver((entries) => {
@@ -200,6 +203,8 @@ const Observer = new ResizeObserver((entries) => {
   const debtHeight = (debtCalc() / incomeCalc()) * height;
   debtTriangle1.style.borderBottom = `${debtHeight}px solid #f76a6a`;
   debtTriangle2.style.borderBottom = `${debtHeight}px solid #e33030`;
+  incomeTriangle1.style.borderBottom = `${height}px solid #5ea532`;
+  incomeTriangle2.style.borderBottom = `${height}px solid #4e892a`;
 });
 Observer.observe(pyramid);
 
