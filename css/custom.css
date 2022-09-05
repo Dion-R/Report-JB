@@ -84,7 +84,7 @@
   width: 0;
   height: 0;
   border-right: 150px solid transparent;
-  border-bottom: 225px solid #ca4b02;;
+  border-bottom: 225px solid #ca4b02;
 }
 
 .triangle5 {
@@ -244,7 +244,10 @@
 @media screen and (max-width: 576px) {
     .pyramid > div:first-of-type {
     left: 29%;
-}
+  }
+  .container {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 476px) {
         .pyramid > div:first-of-type {
