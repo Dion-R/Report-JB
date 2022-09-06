@@ -186,25 +186,49 @@ if (positionString.length == 5 && position < 0) {
   });
 }
 // Responsive pyramid height
-const expenseTriangle1 = document.querySelector(".triangle3");
-const expenseTriangle2 = document.querySelector(".triangle4");
-const debtTriangle1 = document.querySelector(".triangle5");
-const debtTriangle2 = document.querySelector(".triangle6");
-const incomeTriangle1 = document.querySelector('.triangle1')
-const incomeTriangle2 = document.querySelector(".triangle2");
-
+const triangle1 = document.querySelector(".triangle1");
+const triangle2 = document.querySelector(".triangle2");
+const triangle3 = document.querySelector(".triangle3");
+const triangle4 = document.querySelector(".triangle4");
+const triangle5 = document.querySelector(".triangle5");
+const triangle6 = document.querySelector(".triangle6");
+const text1 = document.querySelector('.text1');
+const text2 = document.querySelector('.text2');
+const text3 = document.querySelector('.text3');
 
 const pyramid = document.querySelector(".pyramid");
 const Observer = new ResizeObserver((entries) => {
   const height = entries[0].contentRect.height;
-  const expenseHeight = (expenseCalc() / incomeCalc()) * height;
-  expenseTriangle1.style.borderBottom = `${expenseHeight}px solid #fd8947`;
-  expenseTriangle2.style.borderBottom = `${expenseHeight}px solid #ca4b02`;
-  const debtHeight = (debtCalc() / incomeCalc()) * height;
-  debtTriangle1.style.borderBottom = `${debtHeight}px solid #f76a6a`;
-  debtTriangle2.style.borderBottom = `${debtHeight}px solid #e33030`;
-  incomeTriangle1.style.borderBottom = `${height}px solid #5ea532`;
-  incomeTriangle2.style.borderBottom = `${height}px solid #4e892a`;
+  const sector = height / 3;
+   triangle1.style.borderBottom = `${height}px solid ${array[0].color1}`;
+   triangle2.style.borderBottom = `${height}px solid ${array[0].color2}`;
+   text1.textContent = `${array[0].type}`;
+   triangle3.style.borderBottom = `${sector * 2}px solid ${array[1].color1}`;
+   triangle4.style.borderBottom = `${sector * 2}px solid ${array[1].color2}`;
+   text2.textContent = `${array[1].type}`;
+   triangle5.style.borderBottom = `${sector}px solid ${array[2].color1}`;
+   triangle6.style.borderBottom = `${sector}px solid ${array[2].color2}`;
+   text3.textContent = `${array[2].type}`;
 });
 Observer.observe(pyramid);
 
+const array = [];
+array.push({
+  value: incomeCalc(),
+  type: "Income",
+  color1: "#5ea532",
+  color2: "#4e892a",
+});
+array.push({
+  value: expenseCalc(),
+  type: "Expense",
+  color1: "#f76a6a",
+  color2: "#e33030",
+});
+array.push({
+  value: debtCalc(),
+  type: "Debt",
+  color1: "#fd8947",
+  color2: "#ca4b02",
+});
+array.sort((a, b) => b.value - a.value);
