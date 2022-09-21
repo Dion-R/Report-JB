@@ -118,7 +118,7 @@
             style="background-color: var(--jb-light-red)"
           >
             <h2 class="text-center">
-              Your Expenses are
+              Your Living Expenses are
               <span class="expenseSubTotal" style="color: var(--jb-red)"></span>
               per month
             </h2>
@@ -401,7 +401,7 @@
         </div>
         <div class="col-12">
           <div class="px-3 wrapper">
-            <h2 class="text-center">Financial Summary</h2>
+            <h2 class="text-center">Your Financial Summary</h2>
             <div class="line-red my-3"></div>
             <ul class="list-unstyled">
               <li
@@ -413,7 +413,7 @@
               <li
                 class="d-flex justify-content-between align-items-center my-3"
               >
-                <p class="mb-0 b-l">Expenses</p>
+                <p class="mb-0 b-l">Living Expenses</p>
                 <p class="mb-0 b-l expenseSubTotal"></p>
               </li>
               <li
@@ -423,11 +423,11 @@
                 <p class="mb-0 b-l debtSubTotal"></p>
               </li>
             </ul>
-            <div class="line-red my-3"></div>
+            <div class="line-red my-4"></div>
             <div class="my-3">
               <h3
-                class="text-white d-flex align-items-center justify-content-center rounded mb-0 d-none negative total"
-                style="background-color: var(--jb-red); height: 4rem"
+                class=" d-flex align-items-center justify-content-center rounded mb-0 d-none negative total"
+                style="background-color: var(--jb-light-red); height: 4rem; color: var(--jb-red)"
               >
                 -$400.58 Deficit per month
               </h3>
@@ -439,30 +439,39 @@
               </h3>
             </div>
             <div class="my-3">
-              <h2 class="text-center d-none negative">We Can Help!</h2>
+              <h2 class="text-center d-none negative">We could reduce your debt repayments:</h2>
               <h2 class="text-center d-none positive">Congratulations!</h2>
             </div>
-            <div class="line-red my-3"></div>
+            <div class="line-red my-4"></div>
             <div class="my-3">
-              <p class="mb-0 text-center d-none b-l negative mb-3">
-                It seems that you may be struggling to get by. We could help you
-                by doing the following:
-              </p>
-              <div class="negative grid1 text-center">
-                <div class="grid1 repayments p-2 rounded">
-                  <p>Reduced Debt Repayments</p>
-                  <p>
-                    Current repayments <br />
-                    $1680.00
-                  </p>
-                  <p>
-                    New Debt repayments <br />
-                    $545.00
+              <div class="negative text-center">
+                <div class="repayments1 p-2 rounded my-4">
+                  <p class="capitalise bold">Current Repayments</p>
+
+                  <h3>$1,680</h3>
                   </p>
                 </div>
-                <p class="p-2">
-                  We can help reduce your monthly repayments from your creditors
-                </p>
+                <div class="repayments2 p-2 rounded my-4">
+                  <p class="capitalise bold">New Repayments</p>
+                  <h3>$545</h3>
+                </div>
+
+                <!-- <li class="d-flex align-items-center gap-3 mb-1">
+                    <div>
+                      <div class="dot"></div>
+                    </div>
+                    <p class="mb-0 b-l text-start">We could help reduce your monthly repayments to your creditors</p>
+                  </li>
+                  <li class="d-flex align-items-center gap-3 mb-1">
+                    <div>
+                      <div class="dot"></div>
+                    </div>
+                    <p class="mb-0 b-l text-start">We could help you reduce the amount of debt that you owe</p>
+                  </li>
+                   <li class="d-flex align-items-center gap-3">
+                    <div class="dot"></div>
+                    <p class="mb-0 b-l text-start">We can put your finances back into the green</p>
+                   </li> -->
               </div>
               <p class="mb-0 text-center d-none b-l positive">
                 Based on your financial health summary, we believe that we're
@@ -471,23 +480,13 @@
                 us below.
               </p>
             </div>
-            <h3
-              class="text-white d-flex align-items-center justify-content-center rounded mb-0 d-none negative"
-              style="background-color: var(--jb-green); height: 4rem"
-            >
-              $185 Surplus per month
-            </h3>
-            <div
-              class="btn d-flex align-items-center justify-content-center gap-2 text-white mt-3"
-              style="
-                background-color: var(--jb-blue);
-                margin-bottom: 5rem;
-                height: 4rem;
-              "
-            >
-              <i class="fa-solid fa-phone"></i>
-              <h5 class="mb-0">CALL NOW</h5>
+            <div class="buttonContainer">
+               <div class="button">
+                <i class="fa-solid fa-phone"></i>
+                <h3 class="mb-0">Call Now</h3>
+               </div>
             </div>
+  
           </div>
         </div>
       </div>
@@ -497,3 +496,4 @@
     <script src="js/custom.js"></script>
   </body>
 </html>
+
