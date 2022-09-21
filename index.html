@@ -24,12 +24,14 @@
               We have assessed your online application and created your very own
               personal Financial Summary.
             </p>
-            <p class="mb-0">
+            <p class="mb-3">
               The following Financial Summary has been populated with
-              information gathered from your Banks Statements. In the event we
-              were unable to find the listed expenses from your bank statements,
-              we have generated approximate figures based on existing clients
-              with a similar profile to yours.
+              information gathered from your Banks Statements.
+            </p>
+            <p class="mb-0">
+              In the event we were unable to find the listed expenses from your
+              bank statements, we have generated approximate figures based on
+              existing clients with a similar profile to yours.
             </p>
           </div>
         </div>
@@ -88,7 +90,7 @@
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
                   <p class="mb-0 b-l">Centrelink</p>
-                  <p class="mb-0 b-l income">$1500</p>
+                  <p class="mb-0 b-l income">$3500</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -103,10 +105,10 @@
               <div class="line-green my-3"></div>
             </ul>
             <div class="d-flex justify-content-between aling-items-center">
-              <p class="mb-0 b-l" style="color: var(--jb-green)">
+              <p class="mb-0 b-l bold" style="color: var(--jb-green)">
                 Total Income
               </p>
-              <p class="mb-0 b-l incomeSubTotal"></p>
+              <p class="mb-0 b-l incomeSubTotal bold"></p>
             </div>
           </div>
         </div>
@@ -191,7 +193,7 @@
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
                   <p class="mb-0 b-l">Insurance</p>
-                  <p class="mb-0 b-l expense">$0</p>
+                  <p class="mb-0 b-l expense">$150</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -357,7 +359,7 @@
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
                   <p class="mb-0 b-l">Cigno</p>
-                  <p class="mb-0 b-l debt">$000</p>
+                  <p class="mb-0 b-l debt">$100</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -366,7 +368,7 @@
                   class="d-flex align-items-center flex-grow-1 justify-content-between"
                 >
                   <p class="mb-0 b-l">Zip Pay</p>
-                  <p class="mb-0 b-l debt">$1000</p>
+                  <p class="mb-0 b-l debt">$800</p>
                 </div>
               </li>
               <li class="d-flex align-items-center gap-2 my-3">
@@ -442,12 +444,26 @@
             </div>
             <div class="line-red my-3"></div>
             <div class="my-3">
-              <p class="mb-0 text-center d-none b-l negative">
-                Did you know that we can renegotiate your debt repayments for
-                you? A team member will be in touch with you shortly to
-                discuss your available options. Alternatively, feel free to call
-                us below.
+              <p class="mb-0 text-center d-none b-l negative mb-3">
+                It seems that you may be struggling to get by. We could help you
+                by doing the following:
               </p>
+              <div class="negative grid1 text-center">
+                <div class="grid1 repayments p-2 rounded">
+                  <p>Reduced Debt Repayments</p>
+                  <p>
+                    Current repayments <br />
+                    $1680.00
+                  </p>
+                  <p>
+                    New Debt repayments <br />
+                    $545.00
+                  </p>
+                </div>
+                <p class="p-2">
+                  We can help reduce your monthly repayments from your creditors
+                </p>
+              </div>
               <p class="mb-0 text-center d-none b-l positive">
                 Based on your financial health summary, we believe that we're
                 able to help. A team member will be in touch with you shortly to
@@ -455,6 +471,12 @@
                 us below.
               </p>
             </div>
+            <h3
+              class="text-white d-flex align-items-center justify-content-center rounded mb-0 d-none negative"
+              style="background-color: var(--jb-green); height: 4rem"
+            >
+              $185 Surplus per month
+            </h3>
             <div
               class="btn d-flex align-items-center justify-content-center gap-2 text-white mt-3"
               style="

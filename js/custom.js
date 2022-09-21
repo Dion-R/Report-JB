@@ -221,7 +221,7 @@ array.push({
 });
 array.push({
   value: expenseCalc(),
-  type: "Expense",
+  type: "Expenses",
   color1: "#f76a6a",
   color2: "#e33030",
 });
@@ -232,3 +232,4 @@ array.push({
   color2: "#ca4b02",
 });
 array.sort((a, b) => b.value - a.value);
+
