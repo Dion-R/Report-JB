@@ -26,6 +26,12 @@
   margin-bottom: 1rem;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.subTotal {
+  width: 70%;
+}
+.small {
+  font-size: 0.6rem;
+}
 .call {
   width: 80%;
 }
@@ -359,4 +365,10 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   .triangle6 {
     border-right: 90px solid transparent;
   }
+  .small {
+    font-size: 0.5rem;
+  }
+  .subTotal {
+  width: 100%;
+}
 }

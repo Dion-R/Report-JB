@@ -21,18 +21,12 @@
           <div class="p-3">
             <h3>Hi Dion,</h3>
             <p>
-              We have assessed your online application and created your very own
-              personal Financial Summary.
+              Good news!
+              We have assessed your online application and have found a solution.
             </p>
-            <p class="mb-3">
-              The following Financial Summary has been populated with
-              information gathered from your Banks Statements.
-            </p>
-            <p class="mb-0">
-              In the event we were unable to find the listed expenses from your
-              bank statements, we have generated approximate figures based on
-              existing clients with a similar profile to yours.
-            </p>
+             <p>
+              Please find your financial summary below:
+             </p> 
           </div>
         </div>
         <div
@@ -325,10 +319,10 @@
               <div class="line-red my-3"></div>
             </ul>
             <div class="d-flex justify-content-between aling-items-center">
-              <p class="mb-0 b-l" style="color: var(--jb-red)">
+              <p class="mb-0 b-l bold" style="color: var(--jb-red)">
                 Total Expenses
               </p>
-              <p class="mb-0 b-l expenseSubTotal"></p>
+              <p class="mb-0 b-l expenseSubTotal bold"></p>
             </div>
           </div>
         </div>
@@ -392,10 +386,10 @@
               <div class="line-yellow my-3"></div>
             </ul>
             <div class="d-flex justify-content-between aling-items-center">
-              <p class="mb-0 b-l" style="color: var(--jb-red)">
+              <p class="mb-0 b-l bold" style="color: var(--jb-red)">
                 Total Debt Repayments
               </p>
-              <p class="mb-0 b-l debtSubTotal"></p>
+              <p class="mb-0 b-l debtSubTotal bold"></p>
             </div>
           </div>
         </div>
@@ -425,12 +419,14 @@
             </ul>
             <div class="line-red my-4"></div>
             <div class="my-3">
-              <h3
-                class=" d-flex align-items-center justify-content-center rounded mb-0 d-none negative total"
-                style="background-color: var(--jb-light-red); height: 4rem; color: var(--jb-red)"
-              >
-                -$400.58 Deficit per month
-              </h3>
+              <div class="d-flex justify-content-center">
+                <h3
+                  class="text-white d-flex align-items-center justify-content-center rounded mb-0 d-none negative total subTotal"
+                  style="background-color: #ca4b02; height: 4rem; color: var(--jb-red);"
+                >
+                  -$400.58 Deficit per month
+                </h3>
+              </div>
               <h3
                 class="text-white d-flex align-items-center justify-content-center rounded mb-0 d-none positive total"
                 style="background-color: var(--jb-green); height: 4rem"
@@ -445,33 +441,17 @@
             <div class="line-red my-4"></div>
             <div class="my-3">
               <div class="negative text-center">
-                <div class="repayments1 p-2 rounded my-4">
+                <div class="repayments1 p-2 rounded my-4 b-l">
                   <p class="capitalise bold">Current Repayments</p>
 
                   <h3>$1,680</h3>
                   </p>
                 </div>
-                <div class="repayments2 p-2 rounded my-4">
-                  <p class="capitalise bold">New Repayments</p>
+                <div class="repayments2 p-2 rounded my-4 b-l">
+                  <p class="capitalise bold">Your Estimated New Repayments</p>
                   <h3>$545</h3>
                 </div>
-
-                <!-- <li class="d-flex align-items-center gap-3 mb-1">
-                    <div>
-                      <div class="dot"></div>
-                    </div>
-                    <p class="mb-0 b-l text-start">We could help reduce your monthly repayments to your creditors</p>
-                  </li>
-                  <li class="d-flex align-items-center gap-3 mb-1">
-                    <div>
-                      <div class="dot"></div>
-                    </div>
-                    <p class="mb-0 b-l text-start">We could help you reduce the amount of debt that you owe</p>
-                  </li>
-                   <li class="d-flex align-items-center gap-3">
-                    <div class="dot"></div>
-                    <p class="mb-0 b-l text-start">We can put your finances back into the green</p>
-                   </li> -->
+                <h3>Saving you <span style="color: var(--jb-green);">$1,145</span> per month!</h3>
               </div>
               <p class="mb-0 text-center d-none b-l positive">
                 Based on your financial health summary, we believe that we're
@@ -486,6 +466,9 @@
                 <h3 class="mb-0">Call Now</h3>
                </div>
             </div>
+              <p class="mb-3 small text-center">
+             Your estimated new repayment is calculated on the information that has been supplied by your bank statements. While this data is generally very accurate, in some cases, bank statement values can be incorrect and therefore, we may fill these gaps with approximated figures based on demographic averages related to you. We reserve the right to alter all calculations pending a 
+            </p>
   
           </div>
         </div>
